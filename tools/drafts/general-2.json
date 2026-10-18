@@ -1,0 +1,860 @@
+{
+  "section": "general",
+  "level": 2,
+  "questions": [
+    {
+      "id": "general-2-0001",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "불이 났을 때 소방서에 도움을 요청하는 전화번호는 무엇일까요?",
+      "choices": [
+        "119",
+        "112",
+        "110",
+        "114"
+      ],
+      "answer": 0,
+      "explain": "불이 나거나 다치는 등 재난이 생기면 119에 전화해요.",
+      "tags": [
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 긴급신고 통합서비스",
+          "url": "https://www.mois.go.kr/frt/sub/a06/b10/emergencycall/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0002",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "나쁜 일(범죄)을 보았을 때 경찰에게 신고하는 전화번호는 무엇일까요?",
+      "choices": [
+        "112",
+        "119",
+        "110",
+        "114"
+      ],
+      "answer": 0,
+      "explain": "범죄를 신고할 때는 112에 전화해요.",
+      "tags": [
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 긴급신고 통합서비스",
+          "url": "https://www.mois.go.kr/frt/sub/a06/b10/emergencycall/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0003",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "우리나라를 나타내는 나라꽃은 무엇일까요?",
+      "choices": [
+        "무궁화",
+        "진달래",
+        "개나리",
+        "장미"
+      ],
+      "answer": 0,
+      "explain": "무궁화는 '영원히 피고 또 피어서 지지 않는 꽃'이라는 뜻을 가진 나라꽃이에요.",
+      "tags": [
+        "국가상징"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 우리나라 국가상징: 무궁화",
+          "url": "https://www.mois.go.kr/chd/sub/a05/mugunghwa1/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0004",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "우리나라를 대표하는 노래(국가)는 무엇일까요?",
+      "choices": [
+        "애국가",
+        "아리랑",
+        "고향의 봄",
+        "학교종"
+      ],
+      "answer": 0,
+      "explain": "애국가는 우리나라의 국가예요. \"무궁화 삼천리 화려강산\"이라는 노랫말이 있어요.",
+      "tags": [
+        "국가상징"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 우리나라 국가상징: 애국가",
+          "url": "https://www.mois.go.kr/chd/sub/a05/story/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0005",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "우리나라 국기의 이름은 무엇일까요?",
+      "choices": [
+        "태극기",
+        "애국가",
+        "무궁화",
+        "한글"
+      ],
+      "answer": 0,
+      "explain": "우리나라 국기는 태극기예요. 애국가는 노래, 무궁화는 꽃이에요.",
+      "tags": [
+        "국가상징"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 우리나라 국가상징",
+          "url": "https://www.mois.go.kr/chd/sub/a05/country/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0006",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "대한민국의 수도는 어디일까요?",
+      "choices": [
+        "서울",
+        "부산",
+        "인천",
+        "대구"
+      ],
+      "answer": 0,
+      "explain": "서울은 대한민국의 수도로, 정치·경제·문화의 중심이에요.",
+      "tags": [
+        "지리"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 서울특별시",
+          "url": "https://encykorea.aks.ac.kr/Article/E0028073",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0007",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "올챙이가 자라면 무엇이 될까요?",
+      "choices": [
+        "개구리",
+        "물고기",
+        "거북",
+        "뱀"
+      ],
+      "answer": 0,
+      "explain": "올챙이는 뒷다리와 앞다리가 차례로 생기고 꼬리가 없어지면서 개구리가 돼요.",
+      "tags": [
+        "동물"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 개구리",
+          "url": "https://encykorea.aks.ac.kr/Article/E0001575",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0008",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "태양계에서 가장 큰 행성은 무엇일까요?",
+      "choices": [
+        "목성",
+        "지구",
+        "화성",
+        "수성"
+      ],
+      "answer": 0,
+      "explain": "목성은 지름이 지구의 약 11배나 되는 가장 큰 행성이에요.",
+      "tags": [
+        "우주"
+      ],
+      "sources": [
+        {
+          "title": "한국천문연구원 천문우주지식정보 — 목성",
+          "url": "https://astro.kasi.re.kr/kor/post/jupiterInfo",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0009",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "태양에서 가장 가까운 행성은 무엇일까요?",
+      "choices": [
+        "수성",
+        "지구",
+        "목성",
+        "토성"
+      ],
+      "answer": 0,
+      "explain": "수성은 태양에 가장 가까이 있는 행성이에요.",
+      "tags": [
+        "우주"
+      ],
+      "sources": [
+        {
+          "title": "한국천문연구원 천문우주지식정보 — 수성",
+          "url": "https://astro.kasi.re.kr/kor/post/mercuryInfo",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0010",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "지구 둘레를 도는 지구의 위성은 무엇일까요?",
+      "choices": [
+        "달",
+        "태양",
+        "화성",
+        "금성"
+      ],
+      "answer": 0,
+      "explain": "달은 지구의 둘레를 도는 지구의 위성이에요.",
+      "tags": [
+        "우주"
+      ],
+      "sources": [
+        {
+          "title": "한국천문연구원 천문우주지식정보 — 지구의 위성 달",
+          "url": "https://astro.kasi.re.kr/learning/pageView/5143",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0011",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "지구가 태양 둘레를 한 바퀴 도는 데 걸리는 시간은 얼마일까요?",
+      "choices": [
+        "1년",
+        "하루",
+        "한 달",
+        "일주일"
+      ],
+      "answer": 0,
+      "explain": "지구는 1년에 한 번 태양 둘레를 돌아요. 이것을 공전이라고 해요.",
+      "tags": [
+        "우주"
+      ],
+      "sources": [
+        {
+          "title": "한국천문연구원 천문우주지식정보 — 지구의 운동",
+          "url": "https://astro.kasi.re.kr/learning/pageView/5142",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0012",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "우리 몸에서 피를 온몸으로 보내는 기관은 무엇일까요?",
+      "choices": [
+        "심장",
+        "위",
+        "폐",
+        "뇌"
+      ],
+      "answer": 0,
+      "explain": "심장은 펌프처럼 오므라들며 피를 온몸으로 내보내요.",
+      "tags": [
+        "우리 몸"
+      ],
+      "sources": [
+        {
+          "title": "국가건강정보포털(질병관리청) — 심부전",
+          "url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=3828",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0013",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "지구에서 가장 큰 동물은 무엇일까요?",
+      "choices": [
+        "대왕고래",
+        "코끼리",
+        "기린",
+        "상어"
+      ],
+      "answer": 0,
+      "explain": "대왕고래(흰긴수염고래)는 몸길이가 20m가 넘는, 지구에서 가장 큰 동물이에요.",
+      "tags": [
+        "동물"
+      ],
+      "sources": [
+        {
+          "title": "국립생물자원관 한반도의 생물다양성 — 흰긴수염고래",
+          "url": "https://species.nibr.go.kr/species/speciesDetail.do?ktsn=120000053366",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0014",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "고래는 새끼를 낳고 젖을 먹여 키워요. 고래는 어떤 동물 무리에 속할까요?",
+      "choices": [
+        "포유류",
+        "물고기",
+        "새",
+        "곤충"
+      ],
+      "answer": 0,
+      "explain": "고래는 바다에 살지만 허파로 숨 쉬고 젖을 먹이는 포유류예요.",
+      "tags": [
+        "동물"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 고래",
+          "url": "https://encykorea.aks.ac.kr/Article/E0003417",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0015",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "무지개는 보통 몇 가지 색으로 보일까요?",
+      "choices": [
+        "7가지",
+        "3가지",
+        "5가지",
+        "10가지"
+      ],
+      "answer": 0,
+      "explain": "무지개는 보통 빨·주·노·초·파·남·보 일곱 가지 색으로 보여요.",
+      "tags": [
+        "자연"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 무지개",
+          "url": "https://encykorea.aks.ac.kr/Article/E0019260",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0016",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "남한에서 가장 높은 산은 어디일까요?",
+      "choices": [
+        "한라산",
+        "설악산",
+        "지리산",
+        "북한산"
+      ],
+      "answer": 0,
+      "explain": "제주도에 있는 한라산은 높이가 약 1,950m로 남한에서 가장 높은 산이에요.",
+      "tags": [
+        "지리"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 한라산",
+          "url": "https://encykorea.aks.ac.kr/Article/E0061563",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0017",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "우리나라에서 가장 큰 섬은 어디일까요?",
+      "choices": [
+        "제주도",
+        "울릉도",
+        "강화도",
+        "독도"
+      ],
+      "answer": 0,
+      "explain": "제주도는 우리나라에서 가장 큰 섬이에요.",
+      "tags": [
+        "지리"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 제주도",
+          "url": "https://encykorea.aks.ac.kr/Article/E0051413",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0018",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "손을 깨끗이 씻으려면 비누로 몇 초 이상 꼼꼼히 씻어야 할까요?",
+      "choices": [
+        "30초",
+        "1초",
+        "5초",
+        "10초"
+      ],
+      "answer": 0,
+      "explain": "물과 비누로 30초 이상 손바닥·손등·손가락 사이·손톱 밑까지 닦아요.",
+      "tags": [
+        "건강",
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "국가건강정보포털(질병관리청) — 손씻기",
+          "url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6545",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0019",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "꿀벌이 꽃에서 모아 오는 것은 무엇일까요?",
+      "choices": [
+        "꿀과 꽃가루",
+        "흙과 모래",
+        "나뭇잎과 돌",
+        "물과 소금"
+      ],
+      "answer": 0,
+      "explain": "일벌은 꽃에서 꿀과 꽃가루를 모아 벌집으로 가져와요.",
+      "tags": [
+        "동물",
+        "곤충"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 양봉",
+          "url": "https://encykorea.aks.ac.kr/Article/E0035534",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0020",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "꿀벌은 꽃이 있는 곳을 친구들에게 어떻게 알려 줄까요?",
+      "choices": [
+        "춤을 춰서",
+        "노래를 불러서",
+        "편지를 써서",
+        "불빛을 깜빡여서"
+      ],
+      "answer": 0,
+      "explain": "꽃을 찾은 꿀벌은 벌집에 돌아와 빙글빙글 춤을 추며 꽃이 있는 곳을 알려 줘요.",
+      "tags": [
+        "동물",
+        "곤충"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 양봉",
+          "url": "https://encykorea.aks.ac.kr/Article/E0035534",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0021",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "횡단보도를 건너도 되는 보행자 신호등의 색은 무엇일까요?",
+      "choices": [
+        "초록색",
+        "빨간색",
+        "노란색",
+        "보라색"
+      ],
+      "answer": 0,
+      "explain": "보행자 신호등이 초록색일 때 좌우를 살피고 건너요. 빨간색이면 멈춰요.",
+      "tags": [
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "국가법령정보센터 — 도로교통법 시행규칙 [별표 2] 신호기가 표시하는 신호의 종류 및 신호의 뜻",
+          "url": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EB%8F%84%EB%A1%9C%EA%B5%90%ED%86%B5%EB%B2%95%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0022",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "거미의 다리는 모두 몇 개일까요?",
+      "choices": [
+        "8개",
+        "6개",
+        "4개",
+        "10개"
+      ],
+      "answer": 0,
+      "explain": "거미는 다리가 네 쌍, 모두 8개예요. 그래서 곤충이 아니에요.",
+      "tags": [
+        "동물",
+        "곤충"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 거미",
+          "url": "https://encykorea.aks.ac.kr/Article/E0001827",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0023",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "개미·나비 같은 곤충의 다리는 모두 몇 개일까요?",
+      "choices": [
+        "6개",
+        "8개",
+        "4개",
+        "2개"
+      ],
+      "answer": 0,
+      "explain": "곤충은 가슴에 다리가 세 쌍, 모두 6개 있어요.",
+      "tags": [
+        "동물",
+        "곤충"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 곤충",
+          "url": "https://encykorea.aks.ac.kr/Article/E0004175",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0024",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "곤충의 몸은 어떻게 나뉠까요?",
+      "choices": [
+        "머리·가슴·배 세 부분",
+        "머리·몸 두 부분",
+        "머리·가슴·배·꼬리 네 부분",
+        "나뉘지 않은 한 덩어리"
+      ],
+      "answer": 0,
+      "explain": "곤충의 몸은 머리·가슴·배 세 부분으로 나뉘어요.",
+      "tags": [
+        "동물",
+        "곤충"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 곤충",
+          "url": "https://encykorea.aks.ac.kr/Article/E0004175",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0025",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "한글의 기본 자음(ㄱ, ㄴ, ㄷ …)은 모두 몇 자일까요?",
+      "choices": [
+        "14자",
+        "10자",
+        "24자",
+        "26자"
+      ],
+      "answer": 0,
+      "explain": "한글 기본 자모 24자 가운데 자음이 14자(ㄱ~ㅎ), 모음이 10자예요.",
+      "tags": [
+        "한글"
+      ],
+      "sources": [
+        {
+          "title": "국립국어원 — 한글 맞춤법 제4항",
+          "url": "https://korean.go.kr/kornorms/regltn/regltnView.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0026",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "우리나라 돈의 단위는 무엇일까요?",
+      "choices": [
+        "원",
+        "달러",
+        "엔",
+        "위안"
+      ],
+      "answer": 0,
+      "explain": "우리나라 돈의 단위는 '원'이에요. 달러는 미국, 엔은 일본, 위안은 중국 돈이에요.",
+      "tags": [
+        "경제"
+      ],
+      "sources": [
+        {
+          "title": "한국은행 — 우리나라 화폐단위 변경",
+          "url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=200386",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0027",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "세계에서 가장 높은 산은 무엇일까요?",
+      "choices": [
+        "에베레스트산",
+        "한라산",
+        "백두산",
+        "후지산"
+      ],
+      "answer": 0,
+      "explain": "에베레스트산은 히말라야 산맥에 있는 세계에서 가장 높은 산이에요.",
+      "tags": [
+        "지리",
+        "세계"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 고상돈",
+          "url": "https://encykorea.aks.ac.kr/Article/E0003683",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0028",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "어린이날은 몇 월 며칠일까요?",
+      "choices": [
+        "5월 5일",
+        "5월 8일",
+        "6월 6일",
+        "10월 3일"
+      ],
+      "answer": 0,
+      "explain": "5월 5일 어린이날은 어린이를 소중히 여기자는 뜻을 담은 날이에요.",
+      "tags": [
+        "기념일"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 어린이날",
+          "url": "https://encykorea.aks.ac.kr/Article/E0035938",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0029",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "어린이날을 만드는 데 앞장선 사람은 누구일까요?",
+      "choices": [
+        "방정환",
+        "세종대왕",
+        "이순신",
+        "유관순"
+      ],
+      "answer": 0,
+      "explain": "방정환은 '어린이'라는 말을 널리 쓰고 어린이날을 만드는 데 앞장섰어요.",
+      "tags": [
+        "기념일",
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 방정환",
+          "url": "https://encykorea.aks.ac.kr/Article/E0021783",
+          "checked": "2026-10-18"
+        },
+        {
+          "title": "한국민족문화대백과사전 — 어린이날",
+          "url": "https://encykorea.aks.ac.kr/Article/E0035938",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "general-2-0030",
+      "section": "general",
+      "level": 2,
+      "type": "mcq",
+      "q": "물이 얼음으로 바뀌는 온도는 몇 도일까요?",
+      "choices": [
+        "0도",
+        "10도",
+        "50도",
+        "100도"
+      ],
+      "answer": 0,
+      "explain": "물은 0도에서 얼음이 돼요. 100도는 물이 끓는 온도예요.",
+      "tags": [
+        "자연",
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 얼음",
+          "url": "https://encykorea.aks.ac.kr/Article/E0036201",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    }
+  ]
+}
