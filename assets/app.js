@@ -33,6 +33,9 @@ let users = [], user = null, index = null, prog = null;
 let reports = {};    // 서버 신고 { qid: {state} } — state:'hidden' 이면 숨김
 let pendingReports = [];   // 비밀번호가 없거나 오프라인일 때 못 보낸 신고
 const qCache = {};   // 파일 경로 → 문제 배열
+let custom = {};     // 직접 만든 문제 { id: 문제 }
+const CUSTOM_KEY = 'quiz-world-custom';
+const ADMIN_KEY  = 'quiz-world-admin-token';   // 관리자 비밀번호 — 입력한 기기에만 저장
 
 // ── 유틸 ──────────────────────────────────────────────
 function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
@@ -152,15 +155,39 @@ async function loadQuestions(file) {
   const j = await r.json();
   return (qCache[file] = j.questions || []);
 }
-// 문제 id(history-2-0007) → 그 문제 파일을 찾아 문제 객체로
+// 직접 만든 문제(관리자 모드) — 서버에서 읽어 기본 문제와 합친다. 오프라인이면 마지막으로 받은 것.
+async function loadCustom() {
+  custom = readJSON(CUSTOM_KEY, {});
+  try { const r = await fetch(`${API}/api/custom`, { cache: 'no-store' }); if (r.ok) { custom = await r.json(); writeJSON(CUSTOM_KEY, custom); } } catch {}
+}
+function customFor(sec, lv) { return Object.values(custom).filter(q => q.section === sec && q.level === lv); }
+// 기본 문제(목차)와 직접 만든 문제를 합친 분야·단계 목록 — 문제가 있는 단계만 levels 에 들어간다
+function catalog() {
+  return ALL_SECTIONS.map(s => {
+    const st = (index.sections || []).find(x => x.id === s.id);
+    const levels = {};
+    for (const lv of [1, 2, 3, 4]) {
+      const base = st && st.levels[lv];
+      const count = (base ? base.count : 0) + customFor(s.id, lv).length;
+      if (count) levels[lv] = { file: base ? base.file : null, count };
+    }
+    return { ...s, type: s.id === 'nonsense' ? 'reveal' : 'mcq', levels };
+  });
+}
+async function questionsFor(secId, lv) {
+  const l = catalog().find(s => s.id === secId).levels[lv];
+  const base = l && l.file ? await loadQuestions(l.file) : [];
+  return base.concat(customFor(secId, lv));
+}
+// 문제 id(history-2-0007, 직접 만든 문제는 history-2-u…) → 문제 객체로
 async function loadByIds(ids) {
   const files = new Set();
   for (const id of ids) {
     const [sec, lv] = id.split('-');
-    const s = index.sections.find(x => x.id === sec), l = s && s.levels[lv];
+    const s = (index.sections || []).find(x => x.id === sec), l = s && s.levels[lv];
     if (l) files.add(l.file);
   }
-  const all = (await Promise.all([...files].map(f => loadQuestions(f).catch(() => [])))).flat();
+  const all = (await Promise.all([...files].map(f => loadQuestions(f).catch(() => [])))).flat().concat(Object.values(custom));
   const want = new Set(ids);
   return all.filter(q => want.has(q.id));
 }
@@ -229,7 +256,7 @@ function renderUsers() {
 
 function renderHome() {
   onHome = true;
-  const have = Object.fromEntries((index.sections || []).map(s => [s.id, s]));
+  const have = Object.fromEntries(catalog().filter(s => Object.keys(s.levels).length).map(s => [s.id, s]));
   const nw = wrongIds().length, nf = favIds().length;
   app.innerHTML = `<h2>${esc(user.name)}, 어떤 퀴즈를 풀까요?</h2>
     <div class="sections">${ALL_SECTIONS.map(s => {
@@ -242,8 +269,10 @@ function renderHome() {
       <button class="extra-btn" id="goWrong"${nw ? '' : ' disabled'}>📝 오답 노트 <b>${nw}</b></button>
       <button class="extra-btn" id="goFav"${nf ? '' : ' disabled'}>⭐ 즐겨찾기 <b>${nf}</b></button>
     </div>
-    <p class="sync-line muted" id="syncStatus"></p>`;
+    <p class="sync-line muted" id="syncStatus"></p>
+    <button class="admin-link" id="goAdmin">⚙️ 관리자</button>`;
   app.querySelectorAll('.sec-btn:not([disabled])').forEach(b => b.onclick = () => renderLevels(b.dataset.sec));
+  document.getElementById('goAdmin').onclick = () => (adminToken() ? renderAdmin() : renderAdminLogin());
   document.getElementById('goWrong').onclick = playWrong;
   document.getElementById('goFav').onclick = renderFavs;
   if (!token()) setSync('게임월드에서 동기화 비밀번호를 넣으면 다른 기기와 기록이 이어져요.');
@@ -251,7 +280,7 @@ function renderHome() {
 
 function renderLevels(secId) {
   onHome = false;
-  const sec = index.sections.find(s => s.id === secId);
+  const sec = catalog().find(s => s.id === secId);
   app.innerHTML = `<button class="back" id="back">‹ 분야 고르기</button>
     <h2>${sec.emoji} ${esc(sec.name)} — 단계 고르기</h2>
     <div class="levels">${[1, 2, 3, 4].map(lv => {
@@ -265,7 +294,7 @@ function renderLevels(secId) {
     const lv = Number(b.dataset.lv);
     app.innerHTML = `<p class="muted">문제를 불러오는 중…</p>`;
     let qs;
-    try { qs = await loadQuestions(sec.levels[lv].file); }
+    try { qs = await questionsFor(sec.id, lv); }
     catch { loadFail(() => renderLevels(sec.id)); return; }
     play(pickRound(qs, ROUND), { key: `${sec.id}-${lv}`, again: () => b.onclick(), back: () => renderLevels(sec.id) });
   });
@@ -388,6 +417,162 @@ function play(round, ctx) {
   show();
 }
 
+// ── 관리자 모드 — 직접 문제 만들기(검증 없이 바로 등록) ──────────
+// 저장하면 서버(KV)에 들어가고 두 아이 모두에게 바로 보인다. 앱 코드·문제 파일은 다시 배포하지 않는다.
+function adminToken() { return localStorage.getItem(ADMIN_KEY) || ''; }
+function adminHeaders() { return { 'Content-Type': 'application/json', 'X-Admin-Token': adminToken() }; }
+const SEC_LABEL = Object.fromEntries(ALL_SECTIONS.map(s => [s.id, `${s.emoji} ${s.name}`]));
+
+function renderAdminLogin(msg = '') {
+  onHome = false;
+  app.innerHTML = `<button class="back" id="back">‹ 분야 고르기</button><h2>⚙️ 관리자 모드</h2>
+    <div class="adm-card">
+      <label class="adm-lbl" for="admPw">관리자 비밀번호</label>
+      <input class="adm-in" id="admPw" type="password" inputmode="numeric" autocomplete="off" />
+      <p class="adm-err">${esc(msg)}</p>
+      <button class="btn" id="admGo">들어가기</button>
+    </div>`;
+  document.getElementById('back').onclick = renderHome;
+  const go = async () => {
+    const pw = document.getElementById('admPw').value.trim();
+    if (!pw) return;
+    try {
+      const r = await fetch(`${API}/api/admin/check`, { method: 'POST', headers: { 'X-Admin-Token': pw } });
+      if (r.ok) { localStorage.setItem(ADMIN_KEY, pw); renderAdmin(); }
+      else renderAdminLogin('비밀번호가 맞지 않아요.');
+    } catch { renderAdminLogin('인터넷 연결을 확인해 주세요.'); }
+  };
+  document.getElementById('admGo').onclick = go;
+  document.getElementById('admPw').onkeydown = e => { if (e.key === 'Enter') go(); };
+}
+
+function threeMonthsLater() { const d = new Date(); d.setMonth(d.getMonth() + 3); return d.toISOString().slice(0, 10); }
+
+// editing: 고칠 문제(없으면 새 문제)
+function renderAdmin(editing = null, notice = '') {
+  onHome = false;
+  const e = editing || {};
+  const kind = e.section === 'nonsense' ? 'nonsense' : 'basic';
+  const mine = Object.values(custom).sort((a, b) => String(b.updated || '').localeCompare(a.updated || ''));
+  const ch = e.choices || ['', '', '', ''];
+  const opt = (v, label, cur) => `<option value="${v}"${String(v) === String(cur) ? ' selected' : ''}>${label}</option>`;
+  app.innerHTML = `<button class="back" id="back">‹ 분야 고르기</button>
+    <h2>⚙️ ${editing ? '문제 고치기' : '새 문제 만들기'}</h2>
+    ${notice ? `<p class="adm-ok">${esc(notice)}</p>` : ''}
+    <div class="adm-card">
+      <div class="adm-row">
+        <label class="adm-radio"><input type="radio" name="kind" value="basic"${kind === 'basic' ? ' checked' : ''}> 기본 (4지선다)</label>
+        <label class="adm-radio"><input type="radio" name="kind" value="nonsense"${kind === 'nonsense' ? ' checked' : ''}> 넌센스 (답 하나)</label>
+      </div>
+      <div class="adm-row">
+        <select class="adm-in" id="admSec">${['history', 'general', 'news', 'english'].map(id => opt(id, SEC_LABEL[id], e.section || 'general')).join('')}</select>
+        <select class="adm-in" id="admLv">${[1, 2, 3, 4].map(lv => opt(lv, `${lv}단계 · ${LEVELS[lv][0]}`, e.level || 2)).join('')}</select>
+      </div>
+
+      <label class="adm-lbl" for="admQ">문제</label>
+      <textarea class="adm-in" id="admQ" rows="3">${esc(e.q || '')}</textarea>
+
+      <div id="admBasic">
+        <label class="adm-lbl">보기 4개 <small>— 정답인 보기 왼쪽 동그라미를 눌러요</small></label>
+        ${ch.map((c, i) => `<div class="adm-choice"><input type="radio" name="ans" value="${i}"${e.answer === i ? ' checked' : ''} aria-label="${i + 1}번이 정답">
+          <input class="adm-in" id="admC${i}" value="${esc(c)}" placeholder="보기 ${i + 1}" /></div>`).join('')}
+      </div>
+      <div id="admNonsense">
+        <label class="adm-lbl" for="admA">답</label>
+        <input class="adm-in" id="admA" value="${esc(e.a || '')}" />
+      </div>
+
+      <div id="admExpWrap">
+        <label class="adm-lbl" for="admExp">유효기간 <small>— 시사 문제만. 이 날짜가 지나면 자동으로 숨겨져요</small></label>
+        <input class="adm-in" id="admExp" type="date" value="${esc(e.expires || threeMonthsLater())}" />
+      </div>
+
+      <label class="adm-lbl" for="admEx">해설</label>
+      <textarea class="adm-in" id="admEx" rows="2" placeholder="(선택) 정답을 고른 뒤 보여 줄 짧은 설명">${esc(e.explain || '')}</textarea>
+      <label class="adm-lbl" for="admSrc">출처</label>
+      <input class="adm-in" id="admSrc" value="${esc(e.sources && e.sources[0] && e.sources[0].title !== '직접 입력' ? e.sources[0].title : '')}" placeholder="(선택) 예: 국립중앙박물관 누리집, 교과서 3학년 사회" />
+
+      <p class="adm-err" id="admErr"></p>
+      <button class="btn" id="admSave">${editing ? '고친 내용 저장' : '저장'}</button>
+      ${editing ? '<button class="btn sub" id="admCancel">고치기 그만두기</button>' : ''}
+    </div>
+
+    <h2 class="adm-h">내가 만든 문제 ${mine.length}개</h2>
+    <div class="fav-list">${mine.map(q => `<div class="fav-item adm-item">
+      <small class="muted">${SEC_LABEL[q.section]} · ${q.level}단계${q.expires ? ` · ~${esc(q.expires)}${q.expires < today() ? ' (지남)' : ''}` : ''}${isHidden(q.id) ? ' · 🚩신고됨' : ''}</small>
+      <p class="fav-q">${esc(q.q)}</p>
+      <p class="fav-a">→ <b>${esc(q.type === 'mcq' ? q.choices[q.answer] : q.a)}</b></p>
+      <div class="adm-acts"><button class="star" data-edit="${esc(q.id)}">고치기</button><button class="report" data-del="${esc(q.id)}">지우기</button></div>
+    </div>`).join('') || '<p class="muted">아직 없어요.</p>'}</div>
+    <button class="admin-link" id="admOut">관리자 모드 나가기 (이 기기에서 비밀번호 지우기)</button>`;
+
+  // 기본/넌센스에 따라 보기 칸을 바꾸고, 유효기간은 시사일 때만 켠다
+  const sync = () => {
+    const isN = app.querySelector('input[name=kind]:checked').value === 'nonsense';
+    document.getElementById('admBasic').classList.toggle('hidden', isN);
+    document.getElementById('admNonsense').classList.toggle('hidden', !isN);
+    document.getElementById('admSec').disabled = isN;
+    const isNews = !isN && document.getElementById('admSec').value === 'news';
+    document.getElementById('admExpWrap').classList.toggle('off', !isNews);
+    document.getElementById('admExp').disabled = !isNews;
+  };
+  app.querySelectorAll('input[name=kind]').forEach(r => r.onchange = sync);
+  document.getElementById('admSec').onchange = sync;
+  sync();
+
+  document.getElementById('back').onclick = renderHome;
+  if (editing) document.getElementById('admCancel').onclick = () => renderAdmin();
+  document.getElementById('admOut').onclick = () => { localStorage.removeItem(ADMIN_KEY); renderHome(); };
+
+  document.getElementById('admSave').onclick = async () => {
+    const err = document.getElementById('admErr');
+    const isN = app.querySelector('input[name=kind]:checked').value === 'nonsense';
+    const section = isN ? 'nonsense' : document.getElementById('admSec').value;
+    const body = {
+      ...(editing ? { id: editing.id } : {}),
+      section, level: Number(document.getElementById('admLv').value),
+      q: document.getElementById('admQ').value,
+      explain: document.getElementById('admEx').value,
+      source: document.getElementById('admSrc').value,
+    };
+    if (isN) body.a = document.getElementById('admA').value;
+    else {
+      body.choices = [0, 1, 2, 3].map(i => document.getElementById('admC' + i).value);
+      const a = app.querySelector('input[name=ans]:checked');
+      body.answer = a ? Number(a.value) : -1;
+    }
+    if (section === 'news') body.expires = document.getElementById('admExp').value;
+    // 서버와 같은 기준을 먼저 화면에서 확인 — 빠진 칸을 바로 알려 준다
+    const miss = !body.q.trim() ? '문제를 입력하세요'
+      : isN ? (!body.a.trim() ? '답을 입력하세요' : '')
+      : body.choices.some(c => !c.trim()) ? '보기 4개를 모두 입력하세요'
+      : new Set(body.choices.map(c => c.trim())).size !== 4 ? '보기가 서로 달라야 해요'
+      : body.answer < 0 ? '정답인 보기를 골라 주세요' : '';
+    if (miss) { err.textContent = miss; return; }
+    err.textContent = '저장 중…';
+    try {
+      const r = await fetch(`${API}/api/custom`, { method: 'POST', headers: adminHeaders(), body: JSON.stringify(body) });
+      if (r.status === 401) { localStorage.removeItem(ADMIN_KEY); renderAdminLogin('비밀번호가 바뀌었어요. 다시 입력해 주세요.'); return; }
+      const j = await r.json();
+      if (!r.ok) { err.textContent = j.detail || '저장하지 못했어요.'; return; }
+      if (editing && editing.id !== j.id) delete custom[editing.id];   // 분야·단계를 바꾸면 새 id
+      custom[j.id] = j; writeJSON(CUSTOM_KEY, custom);
+      renderAdmin(null, editing ? '고친 내용을 저장했어요.' : `저장했어요. ${SEC_LABEL[j.section]} ${j.level}단계에 바로 나와요.`);
+    } catch { err.textContent = '인터넷 연결을 확인해 주세요.'; }
+  };
+
+  app.querySelectorAll('[data-edit]').forEach(b => b.onclick = () => { renderAdmin(custom[b.dataset.edit]); window.scrollTo(0, 0); });
+  app.querySelectorAll('[data-del]').forEach(b => b.onclick = async () => {
+    if (!b.dataset.armed) { b.dataset.armed = '1'; b.textContent = '한 번 더 누르면 지워져요'; return; }
+    try {
+      const r = await fetch(`${API}/api/custom/${encodeURIComponent(b.dataset.del)}`, { method: 'DELETE', headers: adminHeaders() });
+      if (r.ok || r.status === 404) { delete custom[b.dataset.del]; writeJSON(CUSTOM_KEY, custom); renderAdmin(null, '지웠어요.'); }
+      else b.textContent = '지우지 못했어요';
+    } catch { b.textContent = '인터넷 연결을 확인해 주세요'; }
+  });
+  window.scrollTo(0, 0);
+}
+
 // ── 시작 ─────────────────────────────────────────────
 // 게임월드의 '퀴즈세상' 카드로 들어왔으면 돌아가는 버튼을 보여 준다(앱 안에서 화면이 바뀌어도 유지)
 try { if (/\/game-world\//.test(document.referrer)) sessionStorage.setItem('quiz-world-from-gw', '1'); } catch {}
@@ -402,10 +587,11 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState !== 'visible' || !user) return;
   if (!_pushTimer) pullProgress();
   loadReports();
+  loadCustom().then(() => { if (onHome) renderHome(); });
 });
 (async () => {
   app.innerHTML = `<p class="muted">불러오는 중…</p>`;
-  await Promise.all([loadUsers(), loadIndex(), loadReports()]);
+  await Promise.all([loadUsers(), loadIndex(), loadReports(), loadCustom()]);
   const u = pickInitialUser();
   if (u) { setUser(u); renderHome(); } else renderUsers();
 })();

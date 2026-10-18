@@ -99,3 +99,25 @@ h2 { font-size: 1.15rem; margin: 4px 0 14px; }
 .fav-a b { color: var(--gold); }
 .fav-e { font-size: .88rem; }
 .fav-item .star { position: absolute; top: 10px; right: 10px; padding: 4px 9px; font-size: 1rem; }
+
+/* 관리자 모드 */
+.admin-link { display: block; margin: 22px auto 0; background: none; border: 0; color: var(--muted); font-size: .8rem; text-decoration: underline; }
+.adm-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.adm-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.adm-row > * { flex: 1 1 140px; }
+.adm-radio { display: flex; align-items: center; gap: 6px; font-weight: 700; padding: 8px 0; }
+.adm-lbl { font-weight: 800; font-size: .9rem; margin-top: 8px; }
+.adm-lbl small { font-weight: 500; color: var(--muted); }
+.adm-in { width: 100%; background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; color: var(--text); font: inherit; }
+.adm-in::placeholder { color: #6b7896; }
+.adm-in:disabled { opacity: .45; }
+textarea.adm-in { resize: vertical; }
+.adm-choice { display: flex; align-items: center; gap: 8px; }
+.adm-choice input[type=radio] { width: 22px; height: 22px; flex: none; accent-color: var(--ok); }
+#admExpWrap.off { opacity: .4; }
+.adm-err { color: var(--ng); font-weight: 700; min-height: 1.2em; margin: 4px 0 0; }
+.adm-ok { color: var(--ok); font-weight: 800; }
+.adm-h { margin-top: 26px; }
+.adm-item { padding-right: 14px; }
+.adm-acts { display: flex; gap: 8px; }
+.adm-acts .star { position: static; }
