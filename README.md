@@ -15,3 +15,11 @@ tools/drafts/ 에 초안 작성 → node tools/validate.mjs tools/drafts/<파일
 ```
 
 문제는 `data/` 에만 있다. 문제를 바꿔도 앱 코드는 다시 배포하지 않는다.
+
+## 운영
+
+- 앱: https://junyoungcha83.github.io/quiz-world/
+- 기록 서버: `api/` (Cloudflare Worker `quiz-world-api`, KV `QUIZ`). 배포 `cd api && npx wrangler deploy`
+- 동기화 비밀번호는 게임월드와 같은 값 — 앱이 게임월드에 저장된 값을 그대로 읽는다.
+- 신고 확인: `node tools/reports.mjs` · 되살리기 `restore <id>` · 고친 뒤 `fixed <id>`
+- 병합 규칙은 `api/src/merge.js` 와 `assets/merge.js` 가 같아야 한다(앱용 사본).

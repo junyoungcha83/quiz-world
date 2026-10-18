@@ -1,0 +1,10 @@
+name = "quiz-world-api"
+main = "src/index.js"
+compatibility_date = "2025-05-01"
+
+# KV: npx wrangler kv namespace create QUIZ  → 아래 id
+[[kv_namespaces]]
+binding = "QUIZ"
+id = "355b2778a9174f09a8037f0b97a6d168"
+
+# 편집 비밀번호(게임월드와 같은 값): npx wrangler secret put EDIT_TOKEN
