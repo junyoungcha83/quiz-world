@@ -1,0 +1,79 @@
+/* 퀴즈세상 — 게임월드와 같은 어두운 바탕·색 체계 */
+:root {
+  --bg: #0b1020; --bg2: #131a30; --card: #1a2238; --border: #2a3552;
+  --text: #e7ecf6; --muted: #94a3c4; --primary: #7c5cff; --primary2: #a78bfa;
+  --ok: #22c55e; --ng: #ef4444; --gold: #facc15;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  background: radial-gradient(120% 80% at 50% 0%, #16203c 0%, var(--bg) 60%) fixed;
+  color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", sans-serif;
+  padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+.hidden { display: none !important; }
+.muted { color: var(--muted); }
+
+.app-header {
+  position: sticky; top: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 16px; background: rgba(11,16,32,.85); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+}
+.brand { background: none; border: 0; padding: 0; font-size: 1.1rem; font-weight: 800; }
+.user-chip { display: flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--border); border-radius: 999px; padding: 3px 12px 3px 3px; font-weight: 700; font-size: .9rem; }
+
+.app-main { max-width: 560px; margin: 0 auto; padding: 18px 16px 40px; }
+h2 { font-size: 1.15rem; margin: 4px 0 14px; }
+
+/* 아바타 — 게임월드 사진 그대로, 없으면 첫 글자 */
+.av { width: 30px; height: 30px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; background: var(--primary); font-weight: 800; flex: none; }
+.av img { width: 100%; height: 100%; object-fit: cover; }
+.av.lg { width: 84px; height: 84px; font-size: 2rem; }
+
+/* 사용자 선택 */
+.users { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
+.user-btn { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px 8px 14px; display: flex; flex-direction: column; align-items: center; gap: 10px; font-weight: 800; font-size: 1.05rem; }
+.user-btn:active { border-color: var(--primary2); }
+
+/* 섹션 카드 */
+.sections { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.sec-btn { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px 12px; text-align: left; display: flex; flex-direction: column; gap: 6px; min-height: 104px; }
+.sec-btn .emo { font-size: 1.8rem; }
+.sec-btn b { font-size: 1.05rem; }
+.sec-btn small { color: var(--muted); font-size: .78rem; }
+.sec-btn:disabled { opacity: .4; cursor: default; }
+
+/* 단계 선택 */
+.levels { display: flex; flex-direction: column; gap: 10px; }
+.lv-btn { display: flex; align-items: center; gap: 12px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; text-align: left; }
+.lv-btn .lv-n { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; background: var(--primary); font-weight: 900; flex: none; }
+.lv-btn b { display: block; }
+.lv-btn small { color: var(--muted); }
+.lv-btn:disabled { opacity: .35; cursor: default; }
+.back { background: none; border: 0; color: var(--muted); padding: 0; margin-bottom: 10px; font-size: .9rem; }
+
+/* 풀이 */
+.qbar { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: .85rem; color: var(--muted); }
+.qbar .track { flex: 1; height: 6px; border-radius: 3px; background: var(--bg2); overflow: hidden; }
+.qbar .fill { height: 100%; background: var(--primary2); transition: width .25s; }
+.streak { color: var(--gold); font-weight: 800; }
+.qcard { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 20px 16px; }
+.qtext { font-size: 1.2rem; font-weight: 800; line-height: 1.5; margin: 0 0 18px; word-break: keep-all; }
+.choices { display: flex; flex-direction: column; gap: 10px; }
+.choice { display: flex; align-items: center; gap: 10px; background: var(--bg2); border: 2px solid var(--border); border-radius: 14px; padding: 13px 14px; text-align: left; font-size: 1.02rem; font-weight: 600; word-break: keep-all; }
+.choice .num { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--border); font-size: .85rem; font-weight: 800; flex: none; }
+.choice.ok { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 18%, var(--bg2)); }
+.choice.ng { border-color: var(--ng); background: color-mix(in srgb, var(--ng) 18%, var(--bg2)); }
+.choice:disabled { cursor: default; }
+.explain { margin-top: 16px; padding: 14px; border-radius: 14px; background: var(--bg2); line-height: 1.6; word-break: keep-all; }
+.explain .verdict { font-weight: 900; font-size: 1.1rem; display: block; margin-bottom: 4px; }
+.explain .verdict.ok { color: var(--ok); }
+.explain .verdict.ng { color: var(--ng); }
+.answer { font-size: 1.5rem; font-weight: 900; color: var(--gold); margin: 6px 0; }
+.btn { display: block; width: 100%; margin-top: 14px; padding: 14px; border: 0; border-radius: 14px; background: var(--primary); font-weight: 800; font-size: 1.05rem; }
+.btn.sub { background: var(--card); border: 1px solid var(--border); }
+
+/* 결과 */
+.result { text-align: center; }
+.result .big { font-size: 3rem; font-weight: 900; margin: 10px 0 4px; }
+.result .msg { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; }

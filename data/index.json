@@ -1,4 +1,29 @@
 {
-  "version": "2026-10-18.1",
-  "sections": []
+  "version": "2026-10-18.2",
+  "sections": [
+    {
+      "id": "history",
+      "name": "역사",
+      "emoji": "🏯",
+      "type": "mcq",
+      "levels": {
+        "2": {
+          "file": "q/history-2.json",
+          "count": 30
+        }
+      }
+    },
+    {
+      "id": "nonsense",
+      "name": "넌센스",
+      "emoji": "🤪",
+      "type": "reveal",
+      "levels": {
+        "2": {
+          "file": "q/nonsense-2.json",
+          "count": 10
+        }
+      }
+    }
+  ]
 }
