@@ -389,6 +389,12 @@ function play(round, ctx) {
 }
 
 // ── 시작 ─────────────────────────────────────────────
+// 게임월드의 '퀴즈세상' 카드로 들어왔으면 돌아가는 버튼을 보여 준다(앱 안에서 화면이 바뀌어도 유지)
+try { if (/\/game-world\//.test(document.referrer)) sessionStorage.setItem('quiz-world-from-gw', '1'); } catch {}
+if (sessionStorage.getItem('quiz-world-from-gw')) {
+  const gb = document.getElementById('gwBack'); gb.classList.remove('hidden');
+  gb.onclick = () => { location.href = '../game-world/'; };
+}
 document.getElementById('btnHome').onclick = () => (user ? renderHome() : renderUsers());
 document.getElementById('userChip').onclick = renderUsers;
 // 앱으로 돌아올 때마다 다른 기기 기록·신고를 받아 온다
