@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-18.2",
+  "version": "2026-10-18.3",
   "sections": [
     {
       "id": "history",
@@ -9,6 +9,18 @@
       "levels": {
         "2": {
           "file": "q/history-2.json",
+          "count": 30
+        }
+      }
+    },
+    {
+      "id": "general",
+      "name": "일반상식",
+      "emoji": "💡",
+      "type": "mcq",
+      "levels": {
+        "2": {
+          "file": "q/general-2.json",
           "count": 30
         }
       }
