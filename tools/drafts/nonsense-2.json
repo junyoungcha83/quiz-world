@@ -1,0 +1,176 @@
+{
+  "section": "nonsense",
+  "level": 2,
+  "questions": [
+    {
+      "id": "nonsense-2-0001",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "얼굴도 있고 바늘도 있는데 바느질은 못 하는 것은?",
+      "a": "시계",
+      "explain": "시계 바늘은 바느질 바늘이 아니라 시간을 가리키는 바늘이에요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0002",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "이가 아주 많은데 아무것도 씹지 못하는 것은?",
+      "a": "빗",
+      "explain": "빗의 촘촘한 살을 빗살 또는 이라고도 불러요. 그래서 이가 많아요!",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0003",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "물만 닿으면 점점 작아지는 것은?",
+      "a": "비누",
+      "explain": "손을 씻을 때마다 비누가 조금씩 닳아요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0004",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "입은 있는데 말은 못 하고 동전만 먹는 것은?",
+      "a": "저금통",
+      "explain": "저금통의 동전 넣는 곳이 입처럼 생겼어요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0005",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "줄이 아주 많은데 아무것도 묶을 수 없는 것은?",
+      "a": "공책",
+      "explain": "공책의 줄은 글씨를 반듯하게 쓰라고 있는 줄이에요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0006",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "하루가 지날 때마다 한 장씩 얇아지는 것은?",
+      "a": "일력(날마다 넘기는 달력)",
+      "explain": "하루에 한 장씩 뜯어 내니까 점점 얇아져요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0007",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "눈이 내려야만 태어날 수 있는 사람은?",
+      "a": "눈사람",
+      "explain": "눈이 와야 만들 수 있으니까요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0008",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "낮에는 쉬고 밤이 되어야 일을 시작하는 '등'은?",
+      "a": "가로등",
+      "explain": "밤이 되면 불을 켜고 길을 밝혀요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0009",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "물에 들어가도 절대 젖지 않는 것은?",
+      "a": "그림자",
+      "explain": "그림자는 물에 비쳐도 젖지 않아요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "nonsense-2-0010",
+      "section": "nonsense",
+      "level": 2,
+      "type": "reveal",
+      "q": "다리는 네 개나 있는데 한 걸음도 걷지 못하는 것은?",
+      "a": "의자",
+      "explain": "의자 다리는 앉는 사람을 받치는 다리예요.",
+      "sources": [
+        {
+          "title": "자체 창작"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    }
+  ]
+}

@@ -1,0 +1,905 @@
+{
+  "section": "history",
+  "level": 2,
+  "questions": [
+    {
+      "id": "history-2-0001",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "한글을 만든 조선의 임금은 누구일까요?",
+      "choices": [
+        "세종대왕",
+        "태조 이성계",
+        "정조",
+        "광개토대왕"
+      ],
+      "answer": 0,
+      "explain": "세종대왕은 백성이 쉽게 글을 읽고 쓸 수 있도록 한글을 만들었어요.",
+      "tags": [
+        "조선",
+        "한글"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 훈민정음",
+          "url": "https://encykorea.aks.ac.kr/Article/E0065806",
+          "checked": "2026-10-18"
+        },
+        {
+          "title": "한국민족문화대백과사전 — 세종",
+          "url": "https://encykorea.aks.ac.kr/Article/E0029857",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0002",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "한글날은 몇 월 며칠일까요?",
+      "choices": [
+        "10월 9일",
+        "3월 1일",
+        "8월 15일",
+        "5월 5일"
+      ],
+      "answer": 0,
+      "explain": "10월 9일 한글날은 세종대왕이 한글을 세상에 널리 알린 것을 기념하는 날이에요.",
+      "tags": [
+        "한글",
+        "기념일"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 한글날",
+          "url": "https://encykorea.aks.ac.kr/Article/E0061511",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0003",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "세종대왕이 한글을 처음 세상에 알릴 때 붙인 이름은 무엇일까요?",
+      "choices": [
+        "훈민정음",
+        "팔만대장경",
+        "삼국유사",
+        "동의보감"
+      ],
+      "answer": 0,
+      "explain": "한글의 처음 이름은 훈민정음이에요. 1446년에 세상에 알렸어요.",
+      "tags": [
+        "조선",
+        "한글"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 훈민정음",
+          "url": "https://encykorea.aks.ac.kr/Article/E0065806",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0004",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "임진왜란 때 거북선을 이끌고 바다에서 싸운 장군은 누구일까요?",
+      "choices": [
+        "이순신",
+        "김유신",
+        "강감찬",
+        "을지문덕"
+      ],
+      "answer": 0,
+      "explain": "이순신 장군은 거북선과 판옥선으로 바다에서 왜군을 크게 물리쳤어요.",
+      "tags": [
+        "조선",
+        "임진왜란"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 거북선",
+          "url": "https://encykorea.aks.ac.kr/Article/E0001833",
+          "checked": "2026-10-18"
+        },
+        {
+          "title": "한국민족문화대백과사전 — 이순신",
+          "url": "https://encykorea.aks.ac.kr/Article/E0044900",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0005",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "거북선의 앞쪽 머리는 어떤 동물 모양일까요?",
+      "choices": [
+        "용",
+        "호랑이",
+        "독수리",
+        "말"
+      ],
+      "answer": 0,
+      "explain": "거북선 앞에는 용의 머리를 달았고, 그 입으로 대포를 쏘았어요.",
+      "tags": [
+        "조선",
+        "임진왜란"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 거북선",
+          "url": "https://encykorea.aks.ac.kr/Article/E0001833",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0006",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "태극기 가운데 둥근 태극 무늬는 어떤 두 가지 색일까요?",
+      "choices": [
+        "빨강과 파랑",
+        "노랑과 초록",
+        "검정과 하양",
+        "보라와 주황"
+      ],
+      "answer": 0,
+      "explain": "태극 무늬의 빨강은 양, 파랑은 음을 나타내요.",
+      "tags": [
+        "국가상징",
+        "태극기"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 국가상징 태극기",
+          "url": "https://www.mois.go.kr/frt/sub/a06/b08/nationalIcon_2/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0007",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "태극기의 바탕은 무슨 색일까요?",
+      "choices": [
+        "흰색",
+        "노란색",
+        "하늘색",
+        "분홍색"
+      ],
+      "answer": 0,
+      "explain": "흰 바탕은 밝음과 깨끗함, 평화를 사랑하는 마음을 나타내요.",
+      "tags": [
+        "국가상징",
+        "태극기"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 국가상징 태극기",
+          "url": "https://www.mois.go.kr/frt/sub/a06/b08/nationalIcon_2/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0008",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "태극기 네 모서리에 있는 검은 막대 무늬를 무엇이라고 할까요?",
+      "choices": [
+        "건곤감리",
+        "무궁화",
+        "단청",
+        "오방색"
+      ],
+      "answer": 0,
+      "explain": "네 모서리의 건곤감리는 하늘·땅·물·불을 나타내요.",
+      "tags": [
+        "국가상징",
+        "태극기"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 국가상징 태극기",
+          "url": "https://www.mois.go.kr/frt/sub/a06/b08/nationalIcon_2/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0009",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "만 원짜리 지폐 앞면에 그려진 사람은 누구일까요?",
+      "choices": [
+        "세종대왕",
+        "신사임당",
+        "이순신",
+        "유관순"
+      ],
+      "answer": 0,
+      "explain": "만 원권 앞면에는 세종대왕이 그려져 있어요.",
+      "tags": [
+        "화폐",
+        "조선"
+      ],
+      "sources": [
+        {
+          "title": "한국은행 — 만원권",
+          "url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=200372",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0010",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "오만 원짜리 지폐 앞면에 그려진 사람은 누구일까요?",
+      "choices": [
+        "신사임당",
+        "세종대왕",
+        "이황",
+        "이이"
+      ],
+      "answer": 0,
+      "explain": "오만 원권에는 그림과 글씨를 잘한 신사임당이 그려져 있어요.",
+      "tags": [
+        "화폐",
+        "조선"
+      ],
+      "sources": [
+        {
+          "title": "한국은행 — 오만원권",
+          "url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=200371",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0011",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "신라의 첨성대는 무엇을 하던 곳으로 알려져 있을까요?",
+      "choices": [
+        "하늘의 별을 살펴보던 곳",
+        "곡식을 쌓아 두던 곳",
+        "임금이 잠을 자던 곳",
+        "물을 모아 두던 곳"
+      ],
+      "answer": 0,
+      "explain": "첨성대는 별과 하늘을 살펴보던 곳으로 알려진 돌탑이에요.",
+      "tags": [
+        "신라",
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 경주 첨성대",
+          "url": "https://encykorea.aks.ac.kr/Article/E0002925",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0012",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "첨성대를 만들었다고 전해지는 신라의 임금은 누구일까요?",
+      "choices": [
+        "선덕여왕",
+        "세종대왕",
+        "광개토대왕",
+        "정조"
+      ],
+      "answer": 0,
+      "explain": "『삼국유사』에 선덕여왕 때 첨성대를 쌓았다고 적혀 있어요.",
+      "tags": [
+        "신라",
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 경주 첨성대",
+          "url": "https://encykorea.aks.ac.kr/Article/E0002925",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0013",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "첨성대가 있는 도시는 어디일까요?",
+      "choices": [
+        "경주",
+        "서울",
+        "부산",
+        "수원"
+      ],
+      "answer": 0,
+      "explain": "첨성대는 신라의 도읍이었던 경주에 있어요.",
+      "tags": [
+        "신라",
+        "유적"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 경주 첨성대",
+          "url": "https://encykorea.aks.ac.kr/Article/E0002925",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0014",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "조선 시대에 비가 얼마나 내렸는지 재던 기구는 무엇일까요?",
+      "choices": [
+        "측우기",
+        "거중기",
+        "첨성대",
+        "혼천의"
+      ],
+      "answer": 0,
+      "explain": "측우기는 세종 때 만들어져 전국에서 비의 양을 재는 데 쓰였어요.",
+      "tags": [
+        "조선",
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 측우기",
+          "url": "https://encykorea.aks.ac.kr/Article/E0058337",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0015",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "팔만대장경은 무엇에 글자를 새겨 만든 것일까요?",
+      "choices": [
+        "나무판",
+        "돌판",
+        "쇠판",
+        "유리판"
+      ],
+      "answer": 0,
+      "explain": "팔만대장경은 나무판 8만여 장에 불교 경전을 한 자 한 자 새긴 거예요.",
+      "tags": [
+        "고려",
+        "불교"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 합천 해인사 대장경판",
+          "url": "https://encykorea.aks.ac.kr/Article/E0062711",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0016",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "고려를 세운 사람은 누구일까요?",
+      "choices": [
+        "왕건",
+        "이성계",
+        "궁예",
+        "견훤"
+      ],
+      "answer": 0,
+      "explain": "왕건은 918년에 고려를 세우고 첫 임금(태조)이 되었어요.",
+      "tags": [
+        "고려",
+        "건국"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 태조(고려)",
+          "url": "https://encykorea.aks.ac.kr/Article/E0059032",
+          "checked": "2026-10-18"
+        },
+        {
+          "title": "한국민족문화대백과사전 — 고려",
+          "url": "https://encykorea.aks.ac.kr/Article/E0003424",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0017",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "조선을 세운 사람은 누구일까요?",
+      "choices": [
+        "이성계",
+        "왕건",
+        "세종대왕",
+        "김유신"
+      ],
+      "answer": 0,
+      "explain": "이성계는 1392년에 조선을 세우고 첫 임금(태조)이 되었어요.",
+      "tags": [
+        "조선",
+        "건국"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 태조(조선)",
+          "url": "https://encykorea.aks.ac.kr/Article/E0059033",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0018",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "조선을 세운 태조가 서울에 처음 지은 궁궐은 어디일까요?",
+      "choices": [
+        "경복궁",
+        "불국사",
+        "해인사",
+        "첨성대"
+      ],
+      "answer": 0,
+      "explain": "경복궁은 1395년에 지어진 조선의 으뜸 궁궐이에요.",
+      "tags": [
+        "조선",
+        "궁궐"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 경복궁",
+          "url": "https://encykorea.aks.ac.kr/Article/E0002434",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0019",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "1919년 3월 1일에 일어난 독립 만세 운동을 기념하는 날은 무엇일까요?",
+      "choices": [
+        "3·1절",
+        "광복절",
+        "한글날",
+        "개천절"
+      ],
+      "answer": 0,
+      "explain": "3·1절은 1919년 3월 1일 온 나라에서 독립 만세를 외친 일을 기념하는 날이에요.",
+      "tags": [
+        "독립운동",
+        "기념일"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 3·1운동",
+          "url": "https://encykorea.aks.ac.kr/Article/E0026772",
+          "checked": "2026-10-18"
+        },
+        {
+          "title": "한국민족문화대백과사전 — 국경일",
+          "url": "https://encykorea.aks.ac.kr/Article/E0006147",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0020",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "3·1운동 때 고향에서 태극기를 만들고 만세 운동에 앞장선 학생 독립운동가는 누구일까요?",
+      "choices": [
+        "유관순",
+        "신사임당",
+        "선덕여왕",
+        "허준"
+      ],
+      "answer": 0,
+      "explain": "유관순은 사촌 언니와 함께 태극기를 만들어 고향 아우내 장터에서 만세 운동을 이끌었어요.",
+      "tags": [
+        "독립운동"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 유관순",
+          "url": "https://encykorea.aks.ac.kr/Article/E0041268",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0021",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "우리나라가 나라를 되찾은 것을 기념하는 광복절은 몇 월 며칠일까요?",
+      "choices": [
+        "8월 15일",
+        "10월 9일",
+        "3월 1일",
+        "6월 6일"
+      ],
+      "answer": 0,
+      "explain": "1945년 8월 15일 우리나라는 일본에게서 나라를 되찾았어요.",
+      "tags": [
+        "광복",
+        "기념일"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 광복절",
+          "url": "https://encykorea.aks.ac.kr/Article/E0005138",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0022",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "광복절은 무엇을 기념하는 날일까요?",
+      "choices": [
+        "빼앗긴 나라를 되찾은 날",
+        "한글을 만든 날",
+        "첫 나라를 세운 날",
+        "어린이를 위한 날"
+      ],
+      "answer": 0,
+      "explain": "광복은 '빛을 되찾다'라는 뜻으로, 나라를 다시 찾은 것을 말해요.",
+      "tags": [
+        "광복",
+        "기념일"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 광복절",
+          "url": "https://encykorea.aks.ac.kr/Article/E0005138",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0023",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "단군 이야기에서 쑥과 마늘을 먹고 사람이 된 동물은 무엇일까요?",
+      "choices": [
+        "곰",
+        "호랑이",
+        "토끼",
+        "거북"
+      ],
+      "answer": 0,
+      "explain": "옛이야기에 따르면 곰은 참고 견뎌 사람이 되었고, 호랑이는 견디지 못했어요.",
+      "tags": [
+        "고조선",
+        "신화"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 단군 신화",
+          "url": "https://encykorea.aks.ac.kr/Article/E0013553",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0024",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "단군 이야기에서 곰이 사람이 되려고 먹은 것은 무엇일까요?",
+      "choices": [
+        "쑥과 마늘",
+        "떡과 꿀",
+        "감자와 고구마",
+        "사과와 배"
+      ],
+      "answer": 0,
+      "explain": "옛이야기에서 곰은 쑥 한 줌과 마늘 스무 개를 먹으며 햇빛을 피해 지냈어요.",
+      "tags": [
+        "고조선",
+        "신화"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 단군 신화",
+          "url": "https://encykorea.aks.ac.kr/Article/E0013553",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0025",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "옛이야기에서 단군왕검이 세웠다고 전해지는 우리나라 첫 나라는 무엇일까요?",
+      "choices": [
+        "고조선",
+        "고려",
+        "신라",
+        "백제"
+      ],
+      "answer": 0,
+      "explain": "고조선은 우리 역사에서 처음 세워진 나라로 전해져요.",
+      "tags": [
+        "고조선",
+        "신화"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 단군 신화",
+          "url": "https://encykorea.aks.ac.kr/Article/E0013553",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0026",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "광개토대왕은 어느 나라의 임금일까요?",
+      "choices": [
+        "고구려",
+        "신라",
+        "백제",
+        "조선"
+      ],
+      "answer": 0,
+      "explain": "광개토대왕은 고구려의 19번째 임금이에요.",
+      "tags": [
+        "고구려",
+        "삼국"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 광개토왕",
+          "url": "https://encykorea.aks.ac.kr/Article/E0005057",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0027",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "광개토대왕이 가장 크게 이룬 일은 무엇일까요?",
+      "choices": [
+        "나라의 땅을 크게 넓혔어요",
+        "한글을 만들었어요",
+        "거북선을 만들었어요",
+        "첨성대를 쌓았어요"
+      ],
+      "answer": 0,
+      "explain": "광개토대왕은 이름처럼 나라의 땅을 크게 넓힌 임금이에요.",
+      "tags": [
+        "고구려",
+        "삼국"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 광개토왕",
+          "url": "https://encykorea.aks.ac.kr/Article/E0005057",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0028",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "경주의 불국사와 석굴암은 어느 나라 때 만들어졌을까요?",
+      "choices": [
+        "신라",
+        "고려",
+        "조선",
+        "고구려"
+      ],
+      "answer": 0,
+      "explain": "불국사와 석굴암은 신라 때 김대성이 짓기 시작했어요.",
+      "tags": [
+        "신라",
+        "유적"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 경주 불국사",
+          "url": "https://encykorea.aks.ac.kr/Article/E0024933",
+          "checked": "2026-10-18"
+        },
+        {
+          "title": "한국민족문화대백과사전 — 경주 석굴암 석굴",
+          "url": "https://encykorea.aks.ac.kr/Article/E0028362",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0029",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "수원 화성을 쌓게 한 조선의 임금은 누구일까요?",
+      "choices": [
+        "정조",
+        "세종",
+        "태조",
+        "연산군"
+      ],
+      "answer": 0,
+      "explain": "정조는 아버지 사도세자를 기리며 수원에 화성을 쌓았어요.",
+      "tags": [
+        "조선",
+        "유적"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 수원 화성",
+          "url": "https://encykorea.aks.ac.kr/Article/E0064671",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "history-2-0030",
+      "section": "history",
+      "level": 2,
+      "type": "mcq",
+      "q": "수원 화성을 쌓을 때 무거운 돌을 들어 올리는 데 쓴 기계는 무엇일까요?",
+      "choices": [
+        "거중기",
+        "측우기",
+        "해시계",
+        "물시계"
+      ],
+      "answer": 0,
+      "explain": "거중기는 도르래를 이용해 무거운 돌을 쉽게 들어 올린 기계예요.",
+      "tags": [
+        "조선",
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전 — 거중기",
+          "url": "https://encykorea.aks.ac.kr/Article/E0001891",
+          "checked": "2026-10-18"
+        },
+        {
+          "title": "한국민족문화대백과사전 — 수원 화성",
+          "url": "https://encykorea.aks.ac.kr/Article/E0064671",
+          "checked": "2026-10-18"
+        }
+      ],
+      "status": "draft",
+      "created": "2026-10-18",
+      "rev": 1
+    }
+  ]
+}
