@@ -1,7 +1,7 @@
 // 오프라인 캐시 — 네트워크 우선, 실패하면 캐시. 문제(data/)도 같은 방식이라 새 문제는 바로 반영된다.
-const CACHE = 'quiz-world-v3';
-const ASSETS = ['./', './index.html', './assets/app.css?v=3', './assets/merge.js?v=3', './assets/app.js?v=3',
-  './manifest.webmanifest?v=3', './assets/icon.svg', './assets/icon-192.png', './assets/icon-512.png', './data/index.json'];
+const CACHE = 'quiz-world-v4';
+const ASSETS = ['./', './index.html', './assets/app.css?v=4', './assets/merge.js?v=4', './assets/app.js?v=4',
+  './manifest.webmanifest?v=4', './assets/icon.svg', './assets/icon-192.png', './assets/icon-512.png', './data/index.json'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => Promise.all(ASSETS.map(u => c.add(new Request(u, { cache: 'reload' })).catch(() => {})))));
   self.skipWaiting();

@@ -446,7 +446,7 @@ function renderAdminLogin(msg = '') {
   document.getElementById('admPw').onkeydown = e => { if (e.key === 'Enter') go(); };
 }
 
-function threeMonthsLater() { const d = new Date(); d.setMonth(d.getMonth() + 3); return d.toISOString().slice(0, 10); }
+function twoYearsLater() { const d = new Date(); d.setFullYear(d.getFullYear() + 2); return d.toISOString().slice(0, 10); }
 
 // editing: 고칠 문제(없으면 새 문제)
 function renderAdmin(editing = null, notice = '') {
@@ -484,7 +484,7 @@ function renderAdmin(editing = null, notice = '') {
 
       <div id="admExpWrap">
         <label class="adm-lbl" for="admExp">유효기간 <small>— 시사 문제만. 이 날짜가 지나면 자동으로 숨겨져요</small></label>
-        <input class="adm-in" id="admExp" type="date" value="${esc(e.expires || threeMonthsLater())}" />
+        <input class="adm-in" id="admExp" type="date" value="${esc(e.expires || twoYearsLater())}" />
       </div>
 
       <label class="adm-lbl" for="admEx">해설</label>

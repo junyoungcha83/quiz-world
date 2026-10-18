@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-18.3",
+  "version": "2026-10-18.4",
   "sections": [
     {
       "id": "history",
@@ -21,6 +21,30 @@
       "levels": {
         "2": {
           "file": "q/general-2.json",
+          "count": 30
+        }
+      }
+    },
+    {
+      "id": "news",
+      "name": "시사",
+      "emoji": "📰",
+      "type": "mcq",
+      "levels": {
+        "1": {
+          "file": "q/news-1.json",
+          "count": 30
+        },
+        "2": {
+          "file": "q/news-2.json",
+          "count": 30
+        },
+        "3": {
+          "file": "q/news-3.json",
+          "count": 30
+        },
+        "4": {
+          "file": "q/news-4.json",
           "count": 30
         }
       }

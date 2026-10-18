@@ -1,0 +1,906 @@
+{
+  "section": "news",
+  "level": 1,
+  "questions": [
+    {
+      "id": "news-1-0001",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "비가 올 때 머리와 옷이 젖지 않도록 사용하는 것은?",
+      "choices": [
+        "우산",
+        "선풍기",
+        "돋보기",
+        "베개"
+      ],
+      "answer": 0,
+      "explain": "비가 올 때 우산을 쓰면 머리와 옷이 젖지 않아요.",
+      "tags": [
+        "생활"
+      ],
+      "sources": [
+        {
+          "title": "기상청",
+          "url": "https://www.kma.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0002",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "쓰레기를 버릴 때 가장 올바른 행동은?",
+      "choices": [
+        "쓰레기 종류에 맞게 분리배출하기",
+        "아무 곳에나 버리기",
+        "길에 던지기",
+        "하수구에 넣기"
+      ],
+      "answer": 0,
+      "explain": "쓰레기를 종류별로 나눠 버리면 다시 쓸 수 있는 것은 재활용돼요.",
+      "tags": [
+        "환경"
+      ],
+      "sources": [
+        {
+          "title": "환경부(기후에너지환경부)",
+          "url": "https://www.me.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0003",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "횡단보도를 건널 때 가장 먼저 해야 할 일은?",
+      "choices": [
+        "멈춰서 좌우를 살피기",
+        "눈을 감고 뛰기",
+        "휴대전화 보기",
+        "친구를 밀기"
+      ],
+      "answer": 0,
+      "explain": "횡단보도 앞에서는 멈춰서 왼쪽·오른쪽을 살핀 뒤 초록불에 건너요.",
+      "tags": [
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "한국도로교통공단",
+          "url": "https://www.koroad.or.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0004",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "지구에서 우리가 숨 쉬는 데 필요한 기체가 들어 있는 것은?",
+      "choices": [
+        "공기",
+        "모래",
+        "유리",
+        "플라스틱"
+      ],
+      "answer": 0,
+      "explain": "공기 속에는 우리가 숨 쉴 때 필요한 산소가 들어 있어요.",
+      "tags": [
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "국립중앙과학관",
+          "url": "https://www.science.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0005",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "겨울철 날씨가 추울 때 입으면 좋은 옷은?",
+      "choices": [
+        "두꺼운 외투",
+        "수영복",
+        "반팔 티셔츠",
+        "얇은 민소매"
+      ],
+      "answer": 0,
+      "explain": "추운 날에는 두꺼운 외투를 입어 몸을 따뜻하게 해요.",
+      "tags": [
+        "생활"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 국민재난안전포털 행동요령",
+          "url": "https://www.safekorea.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0006",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "손을 깨끗하게 씻는 주된 이유는?",
+      "choices": [
+        "세균과 오염물질을 줄이기 위해",
+        "손을 크게 만들기 위해",
+        "손의 색을 바꾸기 위해",
+        "손톱을 길게 만들기 위해"
+      ],
+      "answer": 0,
+      "explain": "손을 씻으면 손에 묻은 세균이 줄어 병에 덜 걸려요.",
+      "tags": [
+        "건강"
+      ],
+      "sources": [
+        {
+          "title": "질병관리청",
+          "url": "https://www.kdca.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0007",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "불이 났을 때 어린이가 해야 할 행동은?",
+      "choices": [
+        "안전한 곳으로 대피하고 어른에게 알리기",
+        "불을 직접 끄려고 하기",
+        "숨기 위해 옷장에 들어가기",
+        "엘리베이터 타기"
+      ],
+      "answer": 0,
+      "explain": "불이 나면 직접 끄지 말고 밖으로 대피해 어른에게 알려요. 엘리베이터는 타면 안 돼요.",
+      "tags": [
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 국민재난안전포털 행동요령",
+          "url": "https://www.safekorea.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0008",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "우리나라의 수도는 어디일까요?",
+      "choices": [
+        "서울",
+        "부산",
+        "제주",
+        "인천"
+      ],
+      "answer": 0,
+      "explain": "우리나라(대한민국)의 수도는 서울이에요.",
+      "tags": [
+        "사회"
+      ],
+      "sources": [
+        {
+          "title": "서울특별시",
+          "url": "https://www.seoul.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0009",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "낮과 밤이 생기는 주된 이유는?",
+      "choices": [
+        "지구가 자전하기 때문에",
+        "달이 빛나기 때문에",
+        "구름이 움직이기 때문에",
+        "바다가 출렁이기 때문에"
+      ],
+      "answer": 0,
+      "explain": "지구가 하루에 한 바퀴씩 스스로 돌아서(자전) 낮과 밤이 생겨요.",
+      "tags": [
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "국립중앙과학관",
+          "url": "https://www.science.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0010",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "물을 아끼는 올바른 방법은?",
+      "choices": [
+        "양치할 때 물을 잠그기",
+        "물을 계속 틀어 놓기",
+        "수도꼭지를 열어 두기",
+        "깨끗한 물을 버리기"
+      ],
+      "answer": 0,
+      "explain": "양치할 때 컵에 물을 받아 쓰고 수도꼭지를 잠그면 물을 아낄 수 있어요.",
+      "tags": [
+        "환경"
+      ],
+      "sources": [
+        {
+          "title": "환경부(기후에너지환경부)",
+          "url": "https://www.me.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0011",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "지구의 환경을 보호하는 행동은?",
+      "choices": [
+        "쓰레기를 줄이고 재활용하기",
+        "쓰레기를 강에 버리기",
+        "나무를 함부로 베기",
+        "전기를 항상 켜 두기"
+      ],
+      "answer": 0,
+      "explain": "쓰레기를 줄이고 재활용하면 지구 환경을 지킬 수 있어요.",
+      "tags": [
+        "환경"
+      ],
+      "sources": [
+        {
+          "title": "환경부(기후에너지환경부)",
+          "url": "https://www.me.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0012",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "태양은 무엇일까요?",
+      "choices": [
+        "스스로 빛과 열을 내는 별",
+        "지구를 도는 인공위성",
+        "바다에 떠 있는 섬",
+        "달의 다른 이름"
+      ],
+      "answer": 0,
+      "explain": "태양은 스스로 빛과 열을 내는 별이에요.",
+      "tags": [
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "NASA — The Sun",
+          "url": "https://science.nasa.gov/sun/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0013",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "감기에 걸리지 않도록 돕는 생활 습관은?",
+      "choices": [
+        "손 씻기와 충분한 휴식",
+        "잠을 전혀 자지 않기",
+        "손을 씻지 않기",
+        "아무 음식이나 먹기"
+      ],
+      "answer": 0,
+      "explain": "손을 잘 씻고 푹 쉬면 감기를 예방하는 데 도움이 돼요.",
+      "tags": [
+        "건강"
+      ],
+      "sources": [
+        {
+          "title": "질병관리청",
+          "url": "https://www.kdca.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0014",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "우리나라 국기에 그려진 빨강과 파랑의 원 모양은 무엇일까요?",
+      "choices": [
+        "태극",
+        "무궁화",
+        "별자리",
+        "나침반"
+      ],
+      "answer": 0,
+      "explain": "태극기 가운데의 빨강·파랑 둥근 무늬를 태극이라고 해요.",
+      "tags": [
+        "사회"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전",
+          "url": "https://encykorea.aks.ac.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0015",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "다른 사람과 물건을 함께 사용할 때 올바른 행동은?",
+      "choices": [
+        "차례를 지키고 양보하기",
+        "무조건 빼앗기",
+        "친구를 밀기",
+        "사용한 물건을 숨기기"
+      ],
+      "answer": 0,
+      "explain": "함께 쓰는 물건은 차례를 지키고 서로 양보하며 써요.",
+      "tags": [
+        "생활"
+      ],
+      "sources": [
+        {
+          "title": "교육부",
+          "url": "https://www.moe.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0016",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "지진이 발생했을 때 실내에서 우선 해야 할 행동은?",
+      "choices": [
+        "튼튼한 책상 아래에서 머리를 보호하기",
+        "창문 가까이에 서 있기",
+        "엘리베이터 타기",
+        "높은 가구를 붙잡고 서 있기"
+      ],
+      "answer": 0,
+      "explain": "지진이 나면 튼튼한 책상 아래로 들어가 머리를 보호해요.",
+      "tags": [
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 국민재난안전포털 행동요령",
+          "url": "https://www.safekorea.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0017",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "식물이 자라는 데 일반적으로 필요한 것은?",
+      "choices": [
+        "물과 햇빛",
+        "플라스틱 장난감",
+        "텔레비전 소리",
+        "유리구슬"
+      ],
+      "answer": 0,
+      "explain": "식물은 물과 햇빛이 있어야 잘 자라요.",
+      "tags": [
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "국립중앙과학관",
+          "url": "https://www.science.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0018",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "음식물을 먹기 전에 해야 할 일은?",
+      "choices": [
+        "손을 깨끗이 씻기",
+        "바닥에 떨어진 음식을 줍기",
+        "다른 사람의 컵 사용하기",
+        "음식을 급하게 삼키기"
+      ],
+      "answer": 0,
+      "explain": "음식을 먹기 전에는 손을 깨끗이 씻어요.",
+      "tags": [
+        "건강"
+      ],
+      "sources": [
+        {
+          "title": "질병관리청",
+          "url": "https://www.kdca.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0019",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "추운 날 길이 얼어 미끄러울 때는 어떻게 해야 할까요?",
+      "choices": [
+        "천천히 조심해서 걷기",
+        "전력으로 뛰기",
+        "친구를 밀며 걷기",
+        "눈을 감고 걷기"
+      ],
+      "answer": 0,
+      "explain": "길이 얼어 미끄러울 때는 넘어지지 않게 천천히 조심해서 걸어요.",
+      "tags": [
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 국민재난안전포털 행동요령",
+          "url": "https://www.safekorea.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0020",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "우리나라를 상징하는 꽃으로 널리 알려진 것은?",
+      "choices": [
+        "무궁화",
+        "장미",
+        "해바라기",
+        "튤립"
+      ],
+      "answer": 0,
+      "explain": "무궁화는 우리나라를 상징하는 꽃으로 널리 알려져 있어요.",
+      "tags": [
+        "사회"
+      ],
+      "sources": [
+        {
+          "title": "한국민족문화대백과사전",
+          "url": "https://encykorea.aks.ac.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0021",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "지구에서 가장 가까운 별은 무엇일까요?",
+      "choices": [
+        "태양",
+        "북극성",
+        "시리우스",
+        "베가"
+      ],
+      "answer": 0,
+      "explain": "지구에서 가장 가까운 별은 태양이에요. 북극성·시리우스는 훨씬 멀리 있어요.",
+      "tags": [
+        "과학"
+      ],
+      "sources": [
+        {
+          "title": "NASA — The Sun",
+          "url": "https://science.nasa.gov/sun/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0022",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "바다에 버려진 플라스틱이 위험한 이유는?",
+      "choices": [
+        "바다 생물이 다칠 수 있어서",
+        "바닷물을 달콤하게 만들어서",
+        "물고기를 모두 크게 만들어서",
+        "파도를 멈추게 해서"
+      ],
+      "answer": 0,
+      "explain": "바다에 버린 플라스틱을 물고기·거북이 같은 바다 생물이 먹거나 몸에 감겨 다칠 수 있어요.",
+      "tags": [
+        "환경"
+      ],
+      "sources": [
+        {
+          "title": "해양수산부",
+          "url": "https://www.mof.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0023",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "물건을 살 때 물건과 교환하는 데 주로 사용하는 것은?",
+      "choices": [
+        "돈",
+        "모래",
+        "나뭇잎",
+        "조개껍데기"
+      ],
+      "answer": 0,
+      "explain": "오늘날 물건을 살 때는 주로 돈을 내요.",
+      "tags": [
+        "경제"
+      ],
+      "sources": [
+        {
+          "title": "한국은행",
+          "url": "https://www.bok.or.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0024",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "도움을 요청할 때 사용하는 우리나라의 화재·구조·구급 신고 번호는?",
+      "choices": [
+        "119",
+        "112",
+        "114",
+        "131"
+      ],
+      "answer": 0,
+      "explain": "불이 나거나 다쳤을 때는 119에 전화해요. 112는 경찰이에요.",
+      "tags": [
+        "안전"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 긴급신고 통합서비스",
+          "url": "https://www.mois.go.kr/frt/sub/a06/b10/emergencycall/screen.do",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0025",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "동물원이나 공원에서 동물을 대하는 올바른 태도는?",
+      "choices": [
+        "동물을 괴롭히지 않고 안내를 따르기",
+        "돌을 던지기",
+        "먹이를 아무거나 주기",
+        "큰 소리로 계속 놀라게 하기"
+      ],
+      "answer": 0,
+      "explain": "동물을 괴롭히지 말고 먹이도 안내에 따라 줘야 해요.",
+      "tags": [
+        "생활"
+      ],
+      "sources": [
+        {
+          "title": "국립생태원",
+          "url": "https://www.nie.re.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0026",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "쓰지 않는 방의 전등을 끄면 좋은 점은?",
+      "choices": [
+        "전기를 절약할 수 있다",
+        "전기가 저절로 늘어난다",
+        "방이 더 넓어진다",
+        "물이 깨끗해진다"
+      ],
+      "answer": 0,
+      "explain": "쓰지 않는 방의 불을 끄면 전기를 아낄 수 있어요.",
+      "tags": [
+        "환경"
+      ],
+      "sources": [
+        {
+          "title": "한국에너지공단",
+          "url": "https://www.energy.or.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0027",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "여름철 더운 날 건강을 지키는 방법은?",
+      "choices": [
+        "물을 마시고 더위를 피하기",
+        "햇볕 아래에서 계속 뛰기",
+        "물을 전혀 마시지 않기",
+        "두꺼운 외투만 입기"
+      ],
+      "answer": 0,
+      "explain": "더운 날에는 물을 자주 마시고 그늘에서 쉬어 더위를 피해요.",
+      "tags": [
+        "건강"
+      ],
+      "sources": [
+        {
+          "title": "행정안전부 — 국민재난안전포털 행동요령",
+          "url": "https://www.safekorea.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0028",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "세계 여러 나라의 사람들이 함께 지켜야 할 중요한 가치는?",
+      "choices": [
+        "서로 존중하고 평화롭게 지내기",
+        "다른 나라 사람을 무조건 미워하기",
+        "모든 나라의 말을 금지하기",
+        "다른 사람의 권리를 무시하기"
+      ],
+      "answer": 0,
+      "explain": "세계 여러 나라 사람들이 서로 존중하면 평화롭게 지낼 수 있어요.",
+      "tags": [
+        "세계"
+      ],
+      "sources": [
+        {
+          "title": "United Nations — UN Charter",
+          "url": "https://www.un.org/en/about-us/un-charter",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0029",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "물건을 재사용하면 좋은 점은?",
+      "choices": [
+        "쓰레기와 자원 낭비를 줄일 수 있다",
+        "쓰레기가 반드시 늘어난다",
+        "자연이 모두 사라진다",
+        "물건이 무조건 새것이 된다"
+      ],
+      "answer": 0,
+      "explain": "물건을 다시 쓰면 쓰레기가 줄고 자원을 아낄 수 있어요.",
+      "tags": [
+        "환경"
+      ],
+      "sources": [
+        {
+          "title": "환경부(기후에너지환경부)",
+          "url": "https://www.me.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    },
+    {
+      "id": "news-1-0030",
+      "section": "news",
+      "level": 1,
+      "type": "mcq",
+      "q": "컴퓨터나 휴대전화로 인터넷을 사용할 때 지켜야 할 것은?",
+      "choices": [
+        "개인정보를 함부로 알려 주지 않기",
+        "비밀번호를 모두에게 공개하기",
+        "모르는 사람이 보낸 링크를 무조건 누르기",
+        "주소와 전화번호를 아무 곳에나 올리기"
+      ],
+      "answer": 0,
+      "explain": "이름·주소·전화번호 같은 개인정보는 인터넷에 함부로 알려 주지 않아요.",
+      "tags": [
+        "정보"
+      ],
+      "sources": [
+        {
+          "title": "개인정보보호위원회",
+          "url": "https://www.pipc.go.kr/",
+          "checked": "2026-10-18"
+        }
+      ],
+      "as_of": "2026-10-18",
+      "expires": "2028-10-18",
+      "status": "verified",
+      "created": "2026-10-18",
+      "rev": 1
+    }
+  ]
+}
